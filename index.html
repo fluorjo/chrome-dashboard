@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Momentum App</title>
+  </head>
+  <body>
+    <div class="login hidden">
+      <h1>Hello, What's your name?</h1>
+      <form class="login-form">
+        <input
+          required
+          maxlength="15"
+          type="text"
+        />
+      </form>
+    </div>
+
+    <h2 id="clock"></h2>
+    <div id="weather">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+     <!--<h1 class="hidden" id="greeting"></h1>--> 
+    <!--뭔가 로그인할 때만 잠깐 멋있게 나왔다가 사라지기.-->
+    <div id="quote">
+      <span> </span>
+      <span> </span>
+    </div>
+
+    
+<!-- 구글 검색 입력 창 -->
+<form id="googlesearch" method=get action="http://www.google.co.kr/search" target="_blank" >
+    <tr>
+    <td>
+      <input id="googlesearch_text"type=text name=q size=25 maxlength=255 value="" /> 
+      <input id="googlesearch_btn"type=submit name=btnG value="&#xf002" /> 
+    </td>
+    </tr>
+</form>
+
+<!--즐겨찾기-->
+<div class="bookmarkbox">
+  <ul id="bookmark-list">
+    <li>
+      <a href="http://www.github.com">      <img src="./img/git.png" alt=""></a>
+
+    </li>
+    <li>
+      <a href="https://wakatime.com/dashboard">
+      <img id="wakaimg" src="./img/wakatime.svg" alt='' />
+      </a>
+
+    </li>
+    <li>
+      <img src='' onerror="this.src='./img/plus.png'" alt='' />
+
+    </li>
+    <li>
+      <img src='' onerror="this.src='./img/plus.png'" alt='' />
+    </li>
+    <li>
+      <img src='' onerror="this.src='./img/plus.png'" alt='' />
+    </li>
+    <li>
+      <img src='' onerror="this.src='./img/plus.png'" alt='' />
+    </li>
+    <li>
+      <img src='' onerror="this.src='./img/plus.png'" alt='' />
+    </li>
+    <li>
+      <img src='' onerror="this.src='./img/plus.png'" alt='' />
+    </li>
+  </ul>
+
+ 
+</div>
+
+
+
+<!--Todo--------------->
+
+    <div id='todo-div'>
+
+      <form action="" id="todo-form">
+          <input type="text" placeholder="Write a To Do and Press Enter" required>
+      </form>
+
+      <ul id="todo-list">
+      </ul>
+    </div>
+
+
+
+<!-- <img src="https://ghchart.rshah.org/00ffff/fluorjo"/>  -->
+
+    <!--wakatime-->
+    <!--<div id="waka">
+      <figure>
+        <embed src="https://wakatime.com/share/@5d18c21e-8710-44da-9f9e-d313524892ad/e39bf1fb-bdc6-4421-99f5-02bef6c48acf.svg"></embed>
+        <!-- 가능하다면 날짜별 색깔 다르게 하기.
+        목표설정. -->
+      </figure>
+      </div>
+
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/edit_todo.js"></script> 
+    <script src="js/bookmark.js"></script> 
+    <script type="module" src="js/weather.js"></script>
+    <script type="module" src="js/validation.js"></script> 
+    <script
+    src="https://kit.fontawesome.com/29233b525a.js" 
+
+crossorigin="anonymous"></script>
+    
+  </body>
+</html>

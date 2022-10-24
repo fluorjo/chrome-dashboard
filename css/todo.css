@@ -1,0 +1,49 @@
+
+#todo-form input{
+    background-color: transparent;
+    border: none;
+    
+    background-color:transparent;;
+    height: 40px;
+    width: 400px;
+    font-size:20pt;
+    text-align:center;
+    color: white;
+
+}
+
+#todo-form input ::placeholder{
+    color:white;
+}
+#todo-form textarea ::placeholder{
+    color:white;
+}
+
+#todo-form input::-webkit-input-placeholder { color: #ffffff; }
+
+
+
+#todo-list{
+    background-color: transparent;
+    width: 400px;
+    border-radius: 20px;
+
+}
+#todo-div{
+    background-color: transparent;;
+    width: 400px;
+
+}
+
+.class_done{
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+li span{
+    background-color:transparent;
+    display:inline-block;
+    width:300px;
+    overflow:hidden;
+    white-space:nowrap;
+}
