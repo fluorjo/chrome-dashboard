@@ -30,33 +30,13 @@ function deleteTodo(event) {
 //완료
 function doneTodo(event) {
     const li=event.target.parentElement;
-    const span=li.querySelector('span');
-    const btn=li.querySelector('button_done');
+    const span=li.querySelector('span')
 
+    span.classList.add('class_done');
     targetData=toDos.filter((toDo) => toDo.id ==li.id);
-
-    if(targetData[0].done===false){
-        span.classList.add('class_done');
-
-        targetData[0].done=true;
-        btn.innerText='↩️'
-
-        saveTodos();
-        saveDoneTodos();
-
-    }
-    else{
-        span.classList.remove('class_done');
-
-        targetData[0].done=false;
-        btn.innerText='☑️'
-        saveTodos();
-        saveDoneTodos();
-
-    }
-    
-
-
+    targetData[0].done=true;
+    saveTodos();
+    saveDoneTodos();
 }
 
 
@@ -78,9 +58,7 @@ function paintTodo(newTodo){
     
     //완료
     const button_done = document.createElement("button_done");
-    //button_done.innerText= "✅";
-
-    button_done.innerText='☑️';
+    button_done.innerText="✔️";
     button_done.addEventListener('click',doneTodo);
 
     toDoList.appendChild(li);
